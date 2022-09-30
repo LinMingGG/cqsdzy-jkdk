@@ -24,7 +24,7 @@ login_header={
 }
 
 #获取verilf
-login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid''
+login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='uuid''
 request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
 #verilf=login_data['data']['verilf']
