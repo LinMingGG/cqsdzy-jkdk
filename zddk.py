@@ -4,17 +4,13 @@ import time
 import os
 
 # 配置开始
-#user = os.environ["USER"]
-#account = user.split( )[0] # 账号
-#password = user.split( )[1] # 密码
-#school_id = user.split( )[2] # 学校ID
-#sign_gps = os.environ["SIGN_GPS"]  # 签到坐标（注意小数点取后6位）
-#longitude = sign_gps.split(",")[0] # 经度
-#latitude = sign_gps.split(",")[1] # 纬度
-#SCKEY=os.environ["SCKEY"]
-#address = os.environ["ADDRESS_NAME"]
-#address_detail = os.environ["ADDRESS_DETAIL"]
+uuid = os.environ["UUID"]
+sign_gps = os.environ["SIGN_GPS"]  # 签到坐标（注意小数点取后6位）
+longitude = sign_gps.split(",")[0] # 经度
+latitude = sign_gps.split(",")[1] # 纬度
    # 'Content-Length': '582',
+   
+   print("定义的uuid是"+uuid)
 login_header={
         'Host': 'ykm.cqsdzy.com',
        
@@ -28,7 +24,7 @@ login_header={
 }
 
 #获取verilf
-login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid=bf26aefa7f6c4c1098a0a72933253c85'
+login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid''
 request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
 #verilf=login_data['data']['verilf']
@@ -39,8 +35,8 @@ print(login_data)
 #打卡接口
 sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
 sign_data={ 
-           'lngLat':'106.529942,29.588676',
-          'uuid':'c42c8add9a7b4c119d73048ba6b6dafa',
+           'lngLat': sign_gps,
+          'uuid':uuid,
           'ykmVerifyId':'c6bc7f0f6a3544e38e4c66e5c48a35ef',
           'homeStatus':'1'
     
