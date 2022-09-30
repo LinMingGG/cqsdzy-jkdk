@@ -28,13 +28,14 @@ login_data=request.text#登陆成功后返回的信息
 time.sleep(1)
 print(login_data)
 #verilf=login_data['data']['verilf']
+verify = "c6bc7f0f6a3544e38e4c66e5c48a35ef"
 
 #打卡接口
 sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
 sign_data={ 
            'lngLat': sign_gps,
           'uuid':uuid,
-          'ykmVerifyId':'c6bc7f0f6a3544e38e4c66e5c48a35ef',
+          'ykmVerifyId': verify,
           'homeStatus':'1'
     
    }
