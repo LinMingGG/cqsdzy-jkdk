@@ -28,7 +28,10 @@ login_data=request.text#登陆成功后返回的信息
 time.sleep(1)
 print(login_data)
 #verilf=login_data['data']['verilf']
-verify = "c6bc7f0f6a3544e38e4c66e5c48a35ef"
+
+#测试1
+verify = login_data['ykmVerifyId']
+print(verify)
 
 #打卡接口
 sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
@@ -43,6 +46,7 @@ sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
 sign=json.loads(sign_request.text)
 print(sign)
 
+#测试2
 pf=sign['msg']
 print(pf)
                                    
