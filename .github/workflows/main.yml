@@ -26,8 +26,8 @@ jobs:
       run: |
         cd ~/cqsdzy-jkdk
         python zddk.py
-   # env:
-       #  USER: ${{ secrets.USER }}
-       #   SIGN_GPS:  ${{ secrets.SIGN_GPS }}
+    env:
+         UUID: ${{ secrets.UUID }}
+          SIGN_GPS:  ${{ secrets.SIGN_GPS }}
       #    ADDRESS_NAME:  ${{ secrets.ADDRESS_NAME }}  
      #    SCKEY: ${{ secrets.SCKEY }}  
