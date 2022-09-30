@@ -11,7 +11,6 @@ latitude = sign_gps.split(",")[1] # 纬度
    # 'Content-Length': '582',
 login_header={
         'Host': 'ykm.cqsdzy.com',
-       
         'Connection': 'Keep-Alive',
         'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2102J2SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36',
         'Cache-Control': 'max-age=0',
@@ -30,8 +29,10 @@ print(login_data)
 #verilf=login_data['data']['verilf']
 
 #测试1
-verify = login_data['ykmVerifyId']
-print(verify)
+#verify = login_data['ykmVerifyId']
+#print(verify)
+test = ' name= "123name" value="123value" '
+test2 = test['name']
 
 #打卡接口
 sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
