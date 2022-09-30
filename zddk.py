@@ -49,17 +49,17 @@ print(login_data)
 
 
 
-sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
-sign_data={ 
-           'lngLat':'106.529942,29.588676',
-           'uuid':'c42c8add9a7b4c119d73048ba6b6dafa',
-           'ykmVerifyId':'c6bc7f0f6a3544e38e4c66e5c48a35ef',
-           'homeStatus':'1'
+#sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
+#sign_data={ 
+  #         'lngLat':'106.529942,29.588676',
+ #          'uuid':'c42c8add9a7b4c119d73048ba6b6dafa',
+ #          'ykmVerifyId':'c6bc7f0f6a3544e38e4c66e5c48a35ef',
+  #         'homeStatus':'1'
     
-   }
-sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
-sign=json.loads(sign_request.text)
-print(sign)
+ #  }
+#sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
+#sign=json.loads(sign_request.text)
+#print(sign)
                                    
 
 
