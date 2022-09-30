@@ -17,10 +17,9 @@ import os
    
 login_header={
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': '227',
         'Host': 'ykm.cqsdzy.com',
         'Connection': 'Keep-Alive',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2102J2SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2102J2SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36'
 
 }
 login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid=bf26aefa7f6c4c1098a0a72933253c85'
