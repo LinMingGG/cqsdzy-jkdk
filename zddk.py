@@ -9,8 +9,6 @@ sign_gps = os.environ["SIGN_GPS"]  # 签到坐标（注意小数点取后6位）
 longitude = sign_gps.split(",")[0] # 经度
 latitude = sign_gps.split(",")[1] # 纬度
    # 'Content-Length': '582',
-   
-print(uuid)
 login_header={
         'Host': 'ykm.cqsdzy.com',
        
@@ -27,10 +25,9 @@ login_header={
 login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid
 request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
-#verilf=login_data['data']['verilf']
 time.sleep(1)
 print(login_data)
-
+#verilf=login_data['data']['verilf']
 
 #打卡接口
 sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
