@@ -29,10 +29,9 @@ print(login_data)
 #verilf=login_data['data']['verilf']
 
 #测试1
-#verify = login_data['ykmVerifyId']
-#print(verify)
-test = ' name = "123name" value="123value" '
-test2 = test["value"]
+verify = login_data['ykmVerifyId']
+print(verify)
+
 
 #打卡接口
 sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
