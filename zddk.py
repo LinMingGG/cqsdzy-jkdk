@@ -48,7 +48,7 @@ print(login_data)
 
 
 
-#sign_url='https://api.xixunyun.com/signin_rsa?token='+token+'&from=app&version=4.9.9&platform=android&entrance_year=0&graduate_year=0 '
+sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
 #sign_data={'address':address_detail,#签到地址
 #           'address_name':address,#签到地点名称
 #           'change_sign_resource':'0',
