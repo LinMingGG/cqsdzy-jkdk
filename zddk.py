@@ -31,7 +31,7 @@ print(login_data)
 #测试1
 #verify = login_data['ykmVerifyId']
 #print(verify)
-test = " name = "123name" value="123value" "
+test = ' name = "123name" value="123value" '
 test2 = test["value"]
 
 #打卡接口
