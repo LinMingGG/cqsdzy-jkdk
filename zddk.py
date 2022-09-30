@@ -24,7 +24,7 @@ login_header={
         'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2102J2SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36',
 
 }
-login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid''
+login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+$uuid''
 request=requests.post(url=login_url,headers=login_header)
 login_data=json.loads(request.text)#登陆成功后返回的信息
 #token=login_data['data']['token']
