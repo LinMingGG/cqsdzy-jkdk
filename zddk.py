@@ -14,10 +14,10 @@ import os
 #SCKEY=os.environ["SCKEY"]
 #address = os.environ["ADDRESS_NAME"]
 #address_detail = os.environ["ADDRESS_DETAIL"]
-   
+   # 'Content-Length': '582',
 login_header={
         'Host': 'ykm.cqsdzy.com',
-        'Content-Length': '582',
+       
         'Connection': 'Keep-Alive',
         'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2102J2SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36',
         'Cache-Control': 'max-age=0',
