@@ -24,7 +24,7 @@ login_header={
 
 }
 login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid=bf26aefa7f6c4c1098a0a72933253c85'
-request=requests.post(url=login_url,headers=login_header)
+request=requests.get(url=login_url,headers=login_header)
 login_data=json.loads(request.text)#登陆成功后返回的信息
 #token=login_data['data']['token']
 time.sleep(1)
