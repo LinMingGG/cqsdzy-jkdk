@@ -16,7 +16,6 @@ import os
 #address_detail = os.environ["ADDRESS_DETAIL"]
    
 login_header={
-        'Content-Type': 'application/x-www-form-urlencoded',
         'Host': 'ykm.cqsdzy.com',
         'Connection': 'Keep-Alive',
         'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2102J2SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36'
