@@ -10,7 +10,7 @@ longitude = sign_gps.split(",")[0] # 经度
 latitude = sign_gps.split(",")[1] # 纬度
    # 'Content-Length': '582',
    
-   print("定义的uuid是"+uuid)
+print("定义的uuid是"uuid)
 login_header={
         'Host': 'ykm.cqsdzy.com',
        
