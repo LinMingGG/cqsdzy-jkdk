@@ -50,7 +50,11 @@ print(login_data)
 
 
 sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
-sign_data={ lngLat=106.529942%2C29.588676&uuid=c42c8add9a7b4c119d73048ba6b6dafa&ykmVerifyId=c6bc7f0f6a3544e38e4c66e5c48a35ef&homeStatus=1&tempStatus=0&healthStatus=0&riskLevel=0&lyStatus=0&lyForm.vehicle=&lyForm.remark=&lyForm.startAddress=&lyForm.endAddress=&lyForm.startDate=&lyForm.endDate=&jcjlStatus=0&jcjl.jcjl01=&jcjl.jcjl02=&jcjl.jcjl03=&jcjl.jcjl04=&jcjl.jcjl05=&jcjl.jcjl07=&_gtjzzStatus=0&glsbStatus=0&glsb.glsb01=&glsb.glsb02=&glsb.glsb03=&glsb.glsb06=&glsb.glsb04=&glsb.glsb05=&qzsbStatus=0&qzsb.qzsb01=&qzsb.qzsb02=&qzsb.qzsb03=&qzsb.qzsb04=&qzsb.qzsb07=&qzsb.qzsb05=&qzsb.qzsb06=
+sign_data={ 
+           'lngLat'='106.529942,29.588676',
+           'uuid'='c42c8add9a7b4c119d73048ba6b6dafa',
+           'ykmVerifyId'='c6bc7f0f6a3544e38e4c66e5c48a35ef',
+           'homeStatus'='1'
     
    }
 sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
