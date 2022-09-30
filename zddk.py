@@ -14,7 +14,6 @@ import os
 #SCKEY=os.environ["SCKEY"]
 #address = os.environ["ADDRESS_NAME"]
 #address_detail = os.environ["ADDRESS_DETAIL"]
-uuid = "bf26aefa7f6c4c1098a0a72933253c85"
    
 login_header={
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -24,7 +23,7 @@ login_header={
         'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2102J2SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36',
 
 }
-login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+$uuid''
+login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid=bf26aefa7f6c4c1098a0a72933253c85'
 request=requests.post(url=login_url,headers=login_header)
 login_data=json.loads(request.text)#登陆成功后返回的信息
 #token=login_data['data']['token']
