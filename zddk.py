@@ -26,29 +26,17 @@ login_header={
         'Accept-Encoding': 'gzip, deflate',
         'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6,zh-TW;q=0.5'
 }
+
+#获取verilf
 login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid=bf26aefa7f6c4c1098a0a72933253c85'
 request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
-
 #verilf=login_data['data']['verilf']
-
 time.sleep(1)
 print(login_data)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#打卡接口
 sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
 sign_data={ 
            'lngLat':'106.529942,29.588676',
