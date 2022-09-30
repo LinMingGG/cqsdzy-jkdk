@@ -42,6 +42,9 @@ sign_data={
 sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
 sign=json.loads(sign_request.text)
 print(sign)
+
+pf=sign['data']['msg']
+print(pf)
                                    
 
 
