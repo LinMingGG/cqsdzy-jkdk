@@ -26,7 +26,6 @@ request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
 time.sleep(1)
 print(login_data)
-print(request.text)
 
 
 
