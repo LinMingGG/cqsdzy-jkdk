@@ -26,7 +26,9 @@ request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
 time.sleep(1)
 print(login_data)
-#verilf=login_data['data']['verilf']
+
+login_data2=json.loads(request.text)
+print(login_data2)
 
 #测试1
 #verify = login_data['ykmVerifyId']
