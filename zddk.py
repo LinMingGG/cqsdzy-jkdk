@@ -27,7 +27,7 @@ request=requests.get(url=login_url,headers=login_header)
 time.sleep(1)
 #print(login_data)
 
-login_data2=json.loads(request.text)
+login_data2=request.read()
 time.sleep(1)
 print(login_data2)
 
