@@ -2,6 +2,7 @@ import requests
 import json
 import time 
 import os
+import urllib2
 
 # 配置开始
 uuid = os.environ["UUID"]
@@ -23,13 +24,25 @@ login_header={
 #获取verilf 这是一个测试
 login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid
 request=requests.get(url=login_url,headers=login_header)
-#login_data=request.text#登陆成功后返回的信息
+login_data=request.text#登陆成功后返回的信息
 time.sleep(1)
-#print(login_data)
+print(login_data)
 
-login_data2=request.read()
+
+
+
+
+
+response = urllib2.urlopen('http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid
+
+htmlStr=response.read()
 time.sleep(1)
-print(login_data2)
+print(htmlStr)
+
+
+
+
+
 
 #测试1
 #verify = login_data['ykmVerifyId']
