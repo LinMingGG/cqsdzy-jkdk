@@ -22,7 +22,8 @@ login_header={
 }
 
 #获取verilf 这是一个测试
-login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid
+#login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid
+login_url='http://ykm.cqsdzy.com/h5/clockin/qw?code=vWuVZ4UfA9QSfa3xVXm4acG6oS54bzglUUaijTaBfLo&state=STATE'
 request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
 time.sleep(1)
