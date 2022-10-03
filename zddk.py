@@ -31,18 +31,6 @@ print(login_data)
 
 
 
-
-
-response = urllib2.urlopen('http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid
-
-htmlStr = response.read()
-print(htmlStr)
-
-
-
-
-
-
 #测试1
 #verify = login_data['ykmVerifyId']
 #print(verify)
