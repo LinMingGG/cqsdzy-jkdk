@@ -35,9 +35,9 @@ print(login_data)
 
 response = urllib2.urlopen('http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid
 
-htmlStr=response.read()
+pt = response.read()
 time.sleep(1)
-print(htmlStr)
+print(pt)
 
 
 
