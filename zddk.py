@@ -38,7 +38,7 @@ sign_url='http://ykm.cqsdzy.com/h5/clockin/add'
 sign_data={ 
            'lngLat': sign_gps,
           'uuid':uuid,
-          'ykmVerifyId': verify,
+        #  'ykmVerifyId': verify,
           'homeStatus':'1'
     
    }
