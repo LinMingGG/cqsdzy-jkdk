@@ -2,7 +2,6 @@ import requests
 import json
 import time 
 import os
-import urllib2
 
 # 配置开始
 uuid = os.environ["UUID"]
@@ -27,7 +26,7 @@ request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
 time.sleep(1)
 print(login_data)
-
+print(request.text)
 
 
 
