@@ -29,8 +29,8 @@ print(login_data)
 #verilf=login_data['data']['verilf']
 
 #测试1
-verify = login_data['ykmVerifyId']
-print(verify)
+#verify = login_data['ykmVerifyId']
+#print(verify)
 
 
 #打卡接口
