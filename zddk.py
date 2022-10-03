@@ -20,7 +20,7 @@ login_header={
         'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6,zh-TW;q=0.5'
 }
 
-#获取verilf
+#获取verilf 这是一个测试
 login_url='http://ykm.cqsdzy.com/h5/clockin/index?type=qw&uuid='+uuid
 request=requests.get(url=login_url,headers=login_header)
 login_data=request.text#登陆成功后返回的信息
